@@ -1,1 +1,50 @@
 https://confluence.atlassian.com/bitbucketserver0413/basic-git-commands-873876516.html?utm_campaign=in-app-help&utm_medium=in-app-help&utm_source=stash
+
+git --version
+git --help < -- to list help options
+git help config < -- To get help for config options 
+git log --help < -- To get help for log options
+git init    <-- initializ and track the code changes, it creates .git folder which is required to track changes ---
+.gitignore  < -- list of files/folders that are not tracked in code changes ----
+git config --global user.name "shanjerri7413"
+git cinfig --global user.email "niceguy_call@yahoo.com"
+git config --list
+git clone
+git status  <  -- check repo status ---
+Note: git command only work from directory& below where .git directory exit, don't be surprice when you are in different place
+git add <file>  <-- add a file to staging ----
+git status 
+git commit
+git pull
+git push
+
+git clone https://github.com/shanjerri7413/Ansible-project . < --- to clone a repo to local system pwd ---
+
+  wroking-dir	staging-area	.git-dir(Repo)
+	| <--checkout---|--project---	|
+	|---staging --->|		|
+        | 		|-----commit--->|
+
+working directory is the area where you are developing code files and folders
+	- Files show "Untracked files:" of # git status
+staging area whhere you add file to commit ot git repo
+	File show in green under "Changes to be committed:" of # git status
+	git add file1   <--- to add file1 to staging area ---
+	git reset file1 < --- to remove file1 from staging before commit ---
+	git add -A 	< --- To add all untracked/changed files&folder to staging area for code commit --    
+commit are files which are commited to repo
+	git commit -m "mening ull comment to reflect commit" <--- commit code to repo -----
+
+git log  <-- to check code commit log with commit hash information which is unique for that commit  ---
+
+git remote -v  <--- To view remote repos ----
+origin	https://github.com/shanjerri7413/Ansible-project (fetch)
+origin	https://github.com/shanjerri7413/Ansible-project (push)
+
+git branch -a    <--- to see all branches of the repository
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+
+git diff .notes_git.txt.swp   <-- to chaeck code change lines  made to file .notes_git.txt.swp ---
+
