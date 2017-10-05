@@ -1,0 +1,7 @@
+# Instace Creation
+#
+- hosts: localhost
+  connection: local
+  roles: 
+    - role: ec2
+  tags: ec2_create

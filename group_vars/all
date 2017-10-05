@@ -1,0 +1,16 @@
+# Ec2 instance variable
+
+ec2:
+  region: us-west-1
+  credencials: MyEC2KeyPair
+  image: ami-3a674d5a
+  sg: Test_SG
+  instance_type: t2.micro
+  subnet: subnet-313d0155
+  public_ip: yes
+  tags:
+    Name: Ec2Ansible
+  volumes:
+     - device_name: /dev/xvda
+       volune_type: standard
+       volume_size: 8
