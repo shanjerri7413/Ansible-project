@@ -48,3 +48,50 @@ git branch -a    <--- to see all branches of the repository
 
 git diff .notes_git.txt.swp   <-- to chaeck code change lines  made to file .notes_git.txt.swp ---
 
+
+
+
+
+
+JACK-MAC:myansible MIS$ git branch -D childbranch <--- delete local branch which is not merged with remote brach --
+Deleted branch childbranch (was 17e0f71).
+JACK-MAC:myansible MIS$ git branch -a
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/childbranch
+  remotes/origin/master
+JACK-MAC:myansible MIS$ git push origin --delete childbranch	< --- To delete remote branch ---
+To https://github.com/shanjerri7413/Ansible-project
+ - [deleted]         childbranch
+JACK-MAC:myansible MIS$ git branch -a
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+JACK-MAC:myansible MIS$
+
+
+
+JACK-MAC:myansible MIS$ git branch -a
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+JACK-MAC:myansible MIS$ git branch childbrach
+JACK-MAC:myansible MIS$ git brach -a
+git: 'brach' is not a git command. See 'git --help'.
+
+Did you mean this?
+	branch
+JACK-MAC:myansible MIS$ git branch -a
+  childbrach
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+JACK-MAC:myansible MIS$ git checkout childbrach
+M	notes_git.txt
+Switched to branch 'childbrach'
+JACK-MAC:myansible MIS$ git branch -a
+* childbrach
+  master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+JACK-MAC:myansible MIS$
